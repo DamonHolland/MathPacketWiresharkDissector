@@ -64,7 +64,7 @@ function res_proto.dissector (buffer, pinfo, tree)
   buff_pos = buff_pos + find_end (buff_pos, SPACE) + 1
   mathTree:add_le (res_code, buffer (buff_pos, find_end (buff_pos, ENDL)))
   if tostring (code_field_val ()) ~= SUCCESS_CODE then
-    buff_pos = buff_pos + find_end (buff_pos, COLON) + 1
+    buff_pos = buff_pos + find_end (buff_pos, COLON) + 2
     mathTree:add_le (res_conn, buffer (buff_pos, find_end (buff_pos, ENDL)))
     return end
   -- Parse Result
