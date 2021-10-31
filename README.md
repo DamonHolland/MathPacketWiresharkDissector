@@ -15,7 +15,7 @@ MATHRS are math response packets.
 
 ### Parsed Math Response
 ![Math Response](images/mathresponse.png?raw=true "Parsed Math Response") </br>
-You can see the reassembly of TCP packets to create the single math response packet
+You can see the reassembly of TCP packets to create the single math response listing.
 
 ### Parsed Math Response w/Error
 ![Math Error Response](images/matherror.png?raw=true "Parsed Math Response w/Error")
