@@ -74,19 +74,19 @@ function res_proto.dissector (buffer, pinfo, tree)
   repeat 
     buff_pos = buff_pos + find_end (buff_pos, ENDL) + 1
   until (buffer (buff_pos,1):le_uint () ~= string.byte (X_STRING))
-  buff_pos = buff_pos + find_end (buff_pos, COLON) + 1
+  buff_pos = buff_pos + find_end (buff_pos, COLON) + 2
   mathTree:add_le (res_round, buffer (buff_pos, find_end (buff_pos, ENDL)))
   -- Parse Overflow
   repeat 
     buff_pos = buff_pos + find_end (buff_pos, ENDL) + 1
   until (buffer (buff_pos,1):le_uint () ~= string.byte (X_STRING))
-  buff_pos = buff_pos + find_end (buff_pos, COLON) + 1
+  buff_pos = buff_pos + find_end (buff_pos, COLON) + 2
   mathTree:add_le (res_over, buffer (buff_pos, find_end (buff_pos, ENDL)))
   -- Parse Connection
   repeat 
     buff_pos = buff_pos + find_end (buff_pos, ENDL) + 1
   until (buffer (buff_pos,1):le_uint () ~= string.byte (X_STRING))
-  buff_pos = buff_pos + find_end (buff_pos, COLON) + 1
+  buff_pos = buff_pos + find_end (buff_pos, COLON) + 2
   mathTree:add_le (res_conn, buffer (buff_pos, find_end (buff_pos, ENDL)))
 end
 -------------------------- Response Protocol End ----------------------------
