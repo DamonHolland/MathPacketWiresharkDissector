@@ -20,6 +20,16 @@ You can see the reassembly of TCP packets to create the single math response lis
 ### Parsed Math Response w/Error
 ![Math Error Response](images/matherror.png?raw=true "Parsed Math Response w/Error")
 
+## Update
+### Added 1.1 Support and X-String Parsing
+
+### Parsed 1.1 Math Response with X-Strings 
+![Parsed 1.1 Math Response with X-Strings](images/mathresponse1.1.png?raw=true "Parsed 1.1 Math Response with X-Strings")
+
+### 1.1 Math Continue Request
+![1.1 Math Continue Request](images/mathresponsekeepalive.png?raw=true "1.1 Math Continue Request")
+
+
 ## How it works
 The plugin is written in Lua.
 
