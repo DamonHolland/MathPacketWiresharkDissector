@@ -2,7 +2,9 @@
 
 ## Installation
 1. Drag the math_packet_dissector.lua into your Wireshark plugins folder. (Ex: User/.local/lib/wireshark/plugins/3.4/)
-2. Reload your plugins in wireshark with Ctrl + Shift + L
+2. Ensure that "Allow subdissector to reassemble TCP streams" is enabled. (Edit -> Preferences -> Protocols -> TCP)
+![Reassemble Enabled](images/reassemblesetting.png?raw=true "Reassemble Enabled") </br>
+3. Reload your plugins in wireshark with Ctrl + Shift + L
 
 ## Examples
 ### Wireshark packet window with plugin
